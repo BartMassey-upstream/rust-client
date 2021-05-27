@@ -1,6 +1,8 @@
 mod controller;
+pub mod view;
 use crate::controller::connect;
+
 fn main() {
-    println!("Hello, world!");
+    view::tui::tui::start_client();
     connect::con();
 }
